@@ -1,0 +1,60 @@
+.navbar {
+  background-color: #675682;
+  font-size: 1rem;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.jumbotron {
+	background-color: #67AECA;
+	background-image: linear-gradient(to right, rgba(103,174,202,0.8),
+									  rgba(103,86,130,0.8)),
+					  			 	  url('img/mug.jpg');
+}
+
+.abt-head, 
+.skill-head {
+	font-family: "Lato";
+}
+
+.display-2 {
+	font-family: "Lato";
+	font-weight: 100;
+	font-size: 6.5em;
+}
+
+.lead {
+	font-family: "Seaweed Script";
+	font-size: 2.5em;
+}
+
+.port-btn {
+	margin-top: 1em;
+	background-color: #E13C79;
+	color: white;
+	font-family: "Lato";
+	font-weight: 300;
+}
+
+.port-btn:hover {
+	color: #675682;
+}
+
+.resume {
+	color: #E13C79;
+	border-color: #E13C79;
+}
+
+.resume:hover {
+	color: white;
+	border-color: #E13C79;
+	background-color: #E13C79;
+}
+
+.list-group-item {
+	position: center;
+}
+
+
+/* Skills */
+
