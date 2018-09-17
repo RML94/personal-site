@@ -6,26 +6,56 @@
 }
 
 .jumbotron {
+	/* clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%); */
 	background-color: #67AECA;
 	background-image: linear-gradient(to right, rgba(103,174,202,0.8),
 									  rgba(103,86,130,0.8)),
 					  			 	  url('img/mug.jpg');
 }
 
+.email {
+	font-size: 1.2em
+}
+
+.e-link {
+	font-size: 1.1em;
+	color: black;
+}
+
 .abt-head, 
-.skill-head {
+.skill-head,
+.contact-head {
 	font-family: "Lato";
+}
+
+.contact-head {
+	font-size: 1.7em;
+}
+
+.about-paragraph {
+	margin-top: 2em;
+}
+
+.my-pic {
+	clip-path: circle(50% at 50% 50%);
+	height: 30%;
+	display: block;
+	margin: auto;
+	background-image: linear-gradient(to right, rgba(103,174,202,0.8),
+									  rgba(103,86,130,0.8));
 }
 
 .display-2 {
 	font-family: "Lato";
 	font-weight: 100;
-	font-size: 6.5em;
+	font-size: 4.2em; 
+	/* font-size: 6.5em; */
 }
 
 .lead {
 	font-family: "Seaweed Script";
-	font-size: 2.5em;
+	font-size: 2em; 
+	/* font-size: 2.5em; */
 }
 
 .port-btn {
@@ -40,9 +70,17 @@
 	color: #675682;
 }
 
+.btn-wrap-text {
+    overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
 .resume {
 	color: #E13C79;
 	border-color: #E13C79;
+	font-size: 1em;
 }
 
 .resume:hover {
@@ -56,5 +94,39 @@
 }
 
 
+
+
 /* Skills */
+
+/*----- Media Queries -----*/
+
+@media (min-width: 576px) {
+	.display-2 {
+		font-size: 6em; 
+	}
+
+	.lead {
+		font-size: 2.5em; 
+	}
+
+	.contact {
+		background-color: rgba(103,174,202,0.8));
+	}
+}
+
+@media (min-width: 768px) {
+	.display-2 {
+		font-size: 7em;
+	}
+
+	.lead {
+		font-size: 2.7em;
+	}
+
+	.resume {
+		font-size: 1.2em;
+		width: 50%;
+	}
+
+}
 
