@@ -8,12 +8,15 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -48,42 +51,28 @@
              });
     </script>
 
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link text-white" href="#about">About</a>
-          <a class="nav-item nav-link text-white" href="#portfolio">Portfolio</a>
-          <a class="nav-item nav-link text-white" href="#contact">Contact</a>
+    <header>
+        <div class="head text-center pt-5">
+          <div class="description">
+            <a href="https://rachellemlee.com" class="head-link">
+              <h1 class="display-2">Rachelle Lee</h1>
+              <p class="lead">Web Developer</p>
+            </a>
+              <a class="btn btn-lg port-btn" href="#portfolio">See Portfolio</a>
+              <a class="btn btn-lg port-btn" href="https://github.com/RML94" target="_blank">See Github</a>
+          </div>
         </div>
-      </div>
-      </div>
-    </nav>
-    <!-- end navbar -->
+    </header>
     
-    <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid text-white">
-      <div class="container text-center pt-5">
-        <h1 class="display-2">Rachelle Lee</h1>
-        <p class="lead">Web Developer</p>
-          <a class="btn btn-lg port-btn" href="#portfolio">See Portfolio</a>
-          <a class="btn btn-lg port-btn" href="https://github.com/RML94" target="_blank">See Github</a>
-      </div>
-    </div>    
-    <!-- end jumbotron -->
-    
-     <div class="container pt-4">
-      <!-- About -->
+
+    <!-- About -->
+    <div class="about container pt-5 pb-4">
       <div id="about" class="row">
         <div class="col-lg-7 h-50">
           <h3 class="mb-4 abt-head text-center">About Me</h3>
+          <hr class="text-center" id="abt-line">
           <div class="about-paragraph">
+            <img src="img/mypic.jpg" id="photo">
             <p class="hey">Hey there! I'm Rachelle.</p>
              <p>I am a very passionate, creative and innovative Web and Software Developer based in the DC Metro Area.
              I graduated with a Bachelor of Science in Computer Science from Towson University. Throughout my college and professional career, I have developed both technical and interpersonal skills that make me a very well-rounded developer.</p> 
@@ -92,22 +81,40 @@
           </div> 
         </div>
         <div class="col-md h-50">
-          <h3 class="mb-4 text-center skill-head">My Skills</h3>
+          <h3 class="mb-4 text-center skill-head">Skills</h3>
+          <hr class="text-center" id="skill-line">
           <div class="list-group text-center">
             <div class="list-group-item list-group-item-action"><strong>HTML</strong></div>
             <div class="list-group-item list-group-item-action"><strong>CSS</strong></div>
             <div class="list-group-item list-group-item-action"><strong>JavaScript</strong></div>
             <div class="list-group-item list-group-item-action"><strong>Java</strong></div>
-            <div class="list-group-item list-group-item-action"><strong>jQuery</strong></div>
             <div class="list-group-item list-group-item-action"><strong>React</strong></div>
             <div class="list-group-item list-group-item-action"><strong>PHP</strong></div>
             <div class="list-group-item list-group-item-action"><strong>MySQL</strong></div>
           </div>
         </div>
-      </div> <!-- About End -->
-      
-      <!-- Portfolio -->
-       <h1 id="portfolio" class="display-4 text-center my-5 text-muted">Portfolio</h1>
+      </div> 
+    </div>
+    <!-- About End -->
+
+
+    <!--- Offer
+    <div class="mid mt-5">
+      <div class="container text-center pt-5 offer">
+        <h4 id="process">Process</h4>
+        <h2>What I Offer</h2>
+        <i class="icon-basic-share skills-icon"></i>
+        <i class="icon-basic-server2 skills-icon"></i>
+        <i class="icon-basic-display skills-icon"></i>
+      </div>
+    </div>
+    --->
+
+    <!-- Portfolio -->
+    <div class="container pt-4">
+      <section class="content-section portfolio">
+       <h4 id="portfolio" class="text-center mt-5">Portfolio</h4>
+       <h2 id="recent" class="mb-5 text-center">Recent Projects</h2>
        
        <div class="row">
           <div class="col-md-6">
@@ -138,7 +145,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Personal Site</h5>
-                <p class="card-text">My original personal portfolio site. Basic one page layout. Use of CSS animations through transformations, such as scaling when hovering and rotations. </p>
+                <p class="card-text">My original personal portfolio site. Basic one page layout. Use of CSS animations through transformations, such as scaling and rotations. </p>
               </div>
             </div>
           </div>
@@ -194,28 +201,31 @@
             </div>
           </div> -->
         </div>
+      </section>
       <!-- portfolio end -->
-       
+
+    </div> <!-- Container End-->
+      
       <!-- Resume button -->
-      <section class="contact text-center my-4">
+      <section class="contact text-center pt-5">
         <span class="contact-head">Contact Me</span><br>
+        <hr id="line">
         </p>
         <p class="email">Email:</p>
         <a href="mailto:rachelle.lee94@gmail.com" target="_top" class="e-link">rachelle.lee94@gmail.com</a>
-        <a href="/RachelleLeeResume.pdf" target="_blank" class="btn btn-lg btn-wrap-text d-block mx-auto my-5 w-25 resume" id="contact">Resume</a>
+        <a href="RachelleLeeResume.pdf" target="_blank" class="btn btn-lg btn-wrap-text d-block mx-auto my-5 resume" id="contact">Resume</a>
+        <hr>
       </section>
       <!-- Resume button -->
-       
        <!-- footer -->
-       <div class="row py-3">
-        <div class="col-md text-md-right">
-          <small>&copy; 2018 Rachelle Lee</small>
-        </div>
-      </div> <!-- footer end -->
+       <footer>
+          <div class="foot">
+            <small>&copy; 2018 Rachelle Lee</small>
+          </div> <!-- footer end -->
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
        
-     </div> <!-- Container End-->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>

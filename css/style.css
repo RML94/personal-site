@@ -1,0 +1,293 @@
+
+/*---- Header ----*/
+
+.header {
+	color: #2D2D2D;
+}
+
+.head {
+	min-height: 30rem;
+	height: 70vh;
+	position: relative;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-image: url('../img/laptop.jpg');
+}
+
+.description {
+	top: 45px;
+	position: relative;
+}
+
+.head-link,
+.head-link:link,
+.head-link:hover {
+	text-decoration: none;
+	color: #2D2D2D;
+}
+
+.display-2 {
+	font-family: "Lato";
+	font-weight: 700;
+	font-size: 4.5em; 
+	/* font-size: 6.5em; */
+}
+
+.lead {
+	font-family: "Seaweed Script";
+	font-size: 2.1em; 
+	/* font-size: 2.5em; */
+}
+
+.port-btn {
+	font-size: 1em;
+	padding: .7em 1.5em;
+	margin-top: 1.2em;
+	background-color: #8C3DA1;
+	color: white;
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+.port-btn:hover {
+	background-color: #EEB528;
+	color: white;
+}
+
+/*--- About ---*/
+.about {
+	margin-top: 1em;
+}
+
+#abt-line,
+#skill-line {
+	background-color: #8C3DA1;
+	margin-top: -1em;
+	width: 40px;
+	height: 1px;
+}
+
+.abt-head,
+.skill-head {
+	color: #EEB528;
+}
+
+#photo {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+	clip-path: circle(50% at 50% 50%);
+}
+
+/*--- Portfolio ---*/
+
+.portfolio {
+	width: 100%;
+}
+
+#recent {
+	color: #2D2D2D;
+	font-weight: 600;
+	font-size: 2.8em;
+}
+
+#portfolio {
+	color: #EEB528;
+	margin-bottom: 0;
+}
+
+.abt-head, 
+.skill-head,
+.contact-head {
+	font-family: "Lato";
+	font-weight: 700;
+}
+
+.contact-head {
+	font-size: 1.7em;
+}
+
+.about-paragraph {
+	margin-top: 2em;
+}
+
+/*--- Contact ---*/
+
+.contact {
+	margin-top: 3.5em;
+}
+
+.btn-wrap-text {
+    overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+.resume {
+	font-size: 1em;
+	color: white;
+	width: 10em;
+	border-color: #8C3DA1;
+	background-color: #8C3DA1;
+}
+
+.resume:hover {
+	color: #8C3DA1;
+	border-color: #8C3DA1;
+	background-color: white;
+}
+
+.email {
+	font-size: 1.2em;
+	margin-top: 1.5em;
+}
+
+.e-link {
+	font-size: 1.1em;
+	color: black;
+}
+
+.list-group-item {
+	position: center;
+}
+
+.contact hr {
+	background-color: #EEB528;
+	margin-top: 5em;
+	height: 10px;
+}
+
+#line {
+	margin-top: 0;
+	width: 55px;
+	height: 1px;
+}
+
+.foot {
+	text-align: right;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+
+/*--- Offer ---*/
+
+.mid {
+	background-color: #8C3DA1;
+	height: 50vh;
+	color: white;
+}
+
+#process {
+	color: #EEB528;
+}
+
+.skills-icon {
+	font-size: 5rem;
+	display: inline-block;
+	-webkit-background-clip: text;
+	margin-top: .5em;
+	float: left;
+}
+
+/*----- Media Queries -----*/
+
+@media (min-width: 576px) {
+	.display-2 {
+		font-size: 6em; 
+	}
+
+	.lead {
+		font-size: 2.5em; 
+	}
+
+	.contact {
+		background-color: rgba(103,174,202,0.8));
+	}
+
+	.port-btn {
+		font-size: .9em;
+		padding: 1em 2em;
+	}
+
+	.head {
+		width: 100%;
+		min-height: 30rem;
+		height: 80vh;
+		position: relative;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+	  	background-size: cover;
+		background-image: url('../img/laptop.jpg');
+		border-bottom: color:#8C3DA1;
+	}
+
+	.display-2 {
+		font-size: 5.2em; 
+		/* font-size: 6.5em; */
+	}
+
+	.lead {
+		font-family: "Seaweed Script";
+		font-size: 2.2em; 
+		/* font-size: 2.5em; */
+	}
+
+	.description {
+		top: 50px;
+		position: relative;
+	}
+
+	.resume {
+		font-size: 1em;
+		width: 20%;
+	}
+
+	#photo {
+		width: 45%;
+	}
+	
+}
+
+@media (min-width: 768px) {
+	.display-2 {
+		font-size: 6.2em;
+	}
+
+	.lead {
+		font-size: 2.7em;
+	}
+
+	.resume {
+		font-size: 1.2em;
+	}
+
+	.port-btn {
+		font-size: 1em;
+		padding: 1em 2em;
+	}
+
+	.contact-head {
+		font-size: 2.3em;
+	}
+
+	.abt-head, 
+	.skill-head,
+	.contact-head {
+		font-size: 2.3em;
+	}
+
+	.head {
+		height: 100vh;
+	}
+
+	.description {
+		top: 100px;
+	}
+
+}
+
